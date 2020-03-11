@@ -4,10 +4,14 @@ import lk.madushanka.mongo.test.mongo.dto.StudentDTO;
 import lk.madushanka.mongo.test.mongo.entity.Student;
 import lk.madushanka.mongo.test.mongo.repository.custom.StudentDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Transactional
+@Component
 public class StudenrtBOImpl implements StudentBO {
 
     @Autowired
